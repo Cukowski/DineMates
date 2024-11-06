@@ -1,0 +1,162 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: #f8b400;
+    flex-wrap: wrap;
+}
+
+header .logo h1 {
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0 0.5em;
+}
+
+.login-signup button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.btn-get-started {
+    background: #f8b400;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.section {
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.how-it-works-cards, .meals-grid {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card, .meal-card {
+    background: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    width: 200px;
+    margin: 0.5em;
+}
+
+.dinemates-carousel {
+    display: flex;
+    overflow: auto;
+    gap: 1em;
+    padding: 1em;
+    background: #eee;
+}
+
+.join-section {
+    background: #f8b400;
+    color: #fff;
+    padding: 2em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.btn-signup-large {
+    background: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header, .how-it-works-cards, .meals-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .card, .meal-card {
+        width: 80%;
+    }
+
+    .login-signup {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .how-it-works-cards, .meals-grid {
+        flex-direction: column;
+    }
+
+    .card, .meal-card {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
