@@ -22,8 +22,8 @@
             </ul>
         </nav>
         <div class="login-signup">
-            <button class="btn-login">Log In</button>
-            <button class="btn-signup">Sign Up</button>
+            <a href="login-signup.html" class="btn-login">Log In</a>
+            <a href="login-signup.html" class="btn-signup">Sign Up</a>
         </div>
     </header>
 
@@ -31,7 +31,8 @@
     <section class="hero">
         <h2>Discover Food and Friends, Together!</h2>
         <p>Meet people with similar tastes, discover new cuisines, and enjoy a dining experience like never before.</p>
-        <button class="btn-get-started">Get Started</button>
+        <p>_____</p>
+        <a href="get-started.html" class="btn-get-started">Get Started</a>
     </section>
 
     <!-- How It Works Section -->
@@ -89,7 +90,8 @@
     <section id="join-us" class="section join-section">
         <h2>Ready to Dine with New Friends?</h2>
         <p>Sign up now and be a part of a community where food brings people together.</p>
-        <button class="btn-signup-large">Join DineMates</button>
+        <p>_____</p>
+        <a href="join-dinemates.html" class="btn-signup-large">Join DineMates</a>
     </section>
 
     <!-- Footer -->
@@ -99,5 +101,21 @@
 
     <!-- JavaScript -->
     <script src="scripts.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>
