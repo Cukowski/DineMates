@@ -57,8 +57,6 @@ nav ul li a {
     padding: 4em 1em;
 }
 
-
-
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
@@ -98,13 +96,55 @@ nav ul li a {
     width: 200px;
     margin: 0.5em;
 }
-
+/*
 .dinemates-carousel {
     display: flex;
     overflow: auto;
     gap: 1em;
     padding: 1em;
     background: #eee;
+}
+*/
+/* Style for DineMate Profile Section */
+/* Centering the DineMates Section */
+#dinemates {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.dinemates-carousel {
+    display: flex;
+    justify-content: center; /* Center-aligns the profiles */
+    gap: 1em; /* Adds space between profiles */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1em 0;
+}
+
+.dinemate-profile {
+    flex: 0 0 200px; /* Fixed width for profile cards */
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dinemate-profile img {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+.dinemate-profile h3 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.dinemate-profile p {
+    font-size: 0.9em;
+    color: #666;
 }
 
 .join-section {
