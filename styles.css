@@ -197,6 +197,13 @@ nav ul li a {
     transform: translateY(-3px);
 }
 
+/* Default image styling for mobile (smaller screens) */
+img.responsive-img {
+    width: 100%; /* Full width on small screens */
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Footer */
 footer {
     background: #333;
@@ -325,6 +332,66 @@ footer {
     color: #f8b400;
 }
 
+/* Download App Section */
+.download-app-section {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.download-app-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.download-app-section p {
+    color: #666;
+    margin-bottom: 2em;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.download-option {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.download-icon {
+    width: 50px;
+    margin-bottom: 0.5em;
+}
+
+.download-option h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #f8b400;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #e09a00;
+}
+
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     header, .how-it-works-cards, .meals-grid {
@@ -368,5 +435,20 @@ footer {
 
     footer {
         font-size: 0.9em;
+    }
+}
+
+/* Adjust image size for larger screens */
+@media (min-width: 768px) {
+    img.responsive-img {
+        width: 70%; /* Adjust width for tablets */
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    img.responsive-img {
+        width: 50%; /* Adjust width for laptops and desktops */
+        max-width: 50%;
     }
 }
