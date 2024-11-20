@@ -1,5 +1,6 @@
 
 # DineMates - Responsive Website Template
+https://cukowski.github.io/LinkUp-EatUp/
 
 DineMates is a sample HTML, CSS, and JavaScript template for a web application that combines meeting people with shared food interests and discovering popular meals near you. Inspired by platforms like Uber Eats, this template is designed to be fully responsive across different devices, including desktops, tablets, and mobile phones.
 
